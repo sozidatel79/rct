@@ -1,5 +1,5 @@
 {
-  "name": "react",
+  "name": "rct",
   "version": "1.0.0",
   "description": "education",
   "main": "index.js",
@@ -8,12 +8,23 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sozidatel79/react.git"
+    "url": "git+https://github.com/sozidatel79/rct.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sozidatel79/react/issues"
+    "url": "https://github.com/sozidatel79/rct/issues"
   },
-  "homepage": "https://github.com/sozidatel79/react#readme"
+  "homepage": "https://github.com/sozidatel79/rct#readme",
+  "dependencies": {
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-es2017": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "webpack": "^2.4.1"
+  }
 }
