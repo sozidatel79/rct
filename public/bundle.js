@@ -9515,11 +9515,16 @@ module.exports = getIteratorFn;
 
 /***/ }),
 /* 81 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
+"use strict";
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__HelloMessage__ = __webpack_require__(85);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__HelloMessage___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__HelloMessage__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__HelloForm__ = __webpack_require__(84);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__HelloForm___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__HelloForm__);
 var React = __webpack_require__(25);
-var HelloMessage = __webpack_require__(85);
-var HelloForm = __webpack_require__(84);
+
+
 var Hello = React.createClass({
     displayName: 'Hello',
 
@@ -9544,13 +9549,14 @@ var Hello = React.createClass({
         return React.createElement(
             'div',
             null,
-            React.createElement(HelloMessage, { name: name, message: message }),
-            React.createElement(HelloForm, { onNewData: this.handleNewData })
+            React.createElement(__WEBPACK_IMPORTED_MODULE_0__HelloMessage___default.a, { name: name, message: message }),
+            React.createElement(__WEBPACK_IMPORTED_MODULE_1__HelloForm___default.a, { onNewData: this.handleNewData })
         );
     }
 });
 
 module.exports = Hello;
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(185)(module)))
 
 /***/ }),
 /* 82 */
@@ -9564,13 +9570,15 @@ module.exports = __webpack_require__(115);
 
 /***/ }),
 /* 83 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_Hello__ = __webpack_require__(81);
 var React = __webpack_require__(25);
 var ReactDOM = __webpack_require__(82);
-var Hello = __webpack_require__(81);
 
-ReactDOM.render(React.createElement(Hello, null), document.querySelector('#app'));
+ReactDOM.render(React.createElement(__WEBPACK_IMPORTED_MODULE_0__components_Hello__["Hello"], null), document.querySelector('#app'));
 
 /***/ }),
 /* 84 */
@@ -22105,6 +22113,36 @@ function traverseAllChildren(children, callback, traverseContext) {
 
 module.exports = traverseAllChildren;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+/* 185 */
+/***/ (function(module, exports) {
+
+module.exports = function(originalModule) {
+	if(!originalModule.webpackPolyfill) {
+		var module = Object.create(originalModule);
+		// module.parent = undefined by default
+		if(!module.children) module.children = [];
+		Object.defineProperty(module, "loaded", {
+			enumerable: true,
+			get: function() {
+				return module.l;
+			}
+		});
+		Object.defineProperty(module, "id", {
+			enumerable: true,
+			get: function() {
+				return module.i;
+			}
+		});
+		Object.defineProperty(module, "exports", {
+			enumerable: true,
+		});
+		module.webpackPolyfill = 1;
+	}
+	return module;
+};
+
 
 /***/ })
 /******/ ]);
