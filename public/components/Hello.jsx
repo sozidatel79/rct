@@ -1,6 +1,6 @@
 var React = require('react');
-import HelloMessage from './HelloMessage';
-import HelloForm from './HelloForm';
+var HelloMessage = require('./HelloMessage');
+var HelloForm = require('./HelloForm');
 var Hello = React.createClass({
     getDefaultProps: function () {
         return {
